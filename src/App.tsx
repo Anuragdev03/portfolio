@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import linkendin from "./assets/linkedin.png";
 import github from "./assets/github.png";
