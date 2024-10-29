@@ -161,6 +161,14 @@ a:hover {
   .hide-on-desktop {
     display: block;
   }
+
+  .exp-grid {
+    display: grid;
+    grid-template-rows: 60px 70% !important;
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
+  
 }
 
 /* Styles for tablets */
