@@ -4,6 +4,10 @@
   color-scheme: light;
 }
 
+h1,h2,h3,h4,h5,h6,span,p {
+  color: #000;
+}
+
 .container {
   background-color: #FAF9F6;
   height: 100vh;
@@ -46,6 +50,7 @@
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+  color: #000;
 }
 
 .highlight {
@@ -54,6 +59,7 @@
 
 .desc {
   width: 300px;
+  color: #000;
 }
 
 .right-section {
