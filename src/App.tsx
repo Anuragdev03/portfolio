@@ -125,17 +125,17 @@ function App() {
               <section className='section-2'>
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "1" ? "50px" : "30px" }} />
-                  <a onClick={() => handleOptions("1")} className='link' tabIndex={1}>ABOUT</a>
+                  <a href='#' onClick={() => handleOptions("1")} className='link' tabIndex={0}>ABOUT</a>
                 </div>
                 <p />
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "2" ? "50px" : "30px" }} />
-                  <a onClick={() => handleOptions("2")} className='link'>SKILLS</a>
+                  <a href='#' onClick={() => handleOptions("2")} className='link' tabIndex={0}>SKILLS</a>
                 </div>
                 <p />
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "3" ? "50px" : "30px" }} />
-                  <a onClick={() => handleOptions("3")} className='link'>EXPERIENCE</a>
+                  <a href='#' onClick={() => handleOptions("3")} className='link' tabIndex={0}>EXPERIENCE</a>
                 </div>
               </section>
 
