@@ -19,7 +19,7 @@ function App() {
         including React.js for web development and React Native for cross-platform mobile apps. I am also adept in <span className="highlight">server-side technologies like Node.js, Express, </span> and TypeScript, allowing me to build robust, full-stack applications. <br />
         Throughout my career, I have put these skills to use, collaborating with teams to architect and implement a wide range of digital products. From <span className="highlight">feature-rich web applications to highly-performant mobile experiences,</span>  I have tackled complex challenges with a focus on clean, maintainable code and intuitive user experiences. <br />
         In addition to my expertise in popular JavaScript frameworks and libraries, I am continuously expanding my horizons. I am currently deepening my knowledge of <span className="highlight">Go</span>  and <span className="highlight">python</span>, two rapidly growing languages that offer unique strengths in areas like systems programming and data analysis. This ongoing commitment to learning allows me to stay ahead of industry trends and bring the most relevant, cutting-edge solutions to my work. <br />
-        Beyond technical proficiency, I pride myself on my ability to communicate effectively with both technical and non-technical stakeholders. I excel at breaking down complex problems, clearly articulating solutions, and delivering projects that meet or exceed client expectations. My <span className="highlight">adaptability, attention to detail,</span>  and <span className="highlight">strong work ethic</span>  make me a valuable asset to any development team.
+        Beyond technical proficiency, I pride myself on my ability to communicate effectively with both technical and non-technical stakeholders. My <span className="highlight">adaptability, attention to detail,</span>  and <span className="highlight">strong work ethic</span>  make me a valuable asset to any development team.
       </p>
     )
   }
@@ -115,7 +115,7 @@ function App() {
                 <h1 className='name'>
                   ANURAG D
                 </h1>
-                <h3 className='title'>{title}</h3>
+                <h2 className='title'>{title}</h2>
 
                 <p className='desc'>
                   Passionate about crafting elegant and efficient <span className='highlight'>web</span> and <span className='highlight'>mobile</span> applications.
@@ -125,7 +125,7 @@ function App() {
               <section className='section-2'>
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "1" ? "50px" : "30px" }} />
-                  <a onClick={() => handleOptions("1")} className='link'>ABOUT</a>
+                  <a onClick={() => handleOptions("1")} className='link' tabIndex={1}>ABOUT</a>
                 </div>
                 <p />
                 <div className='link-container'>
@@ -140,11 +140,11 @@ function App() {
               </section>
 
               <section className='section-3'>
-                <a href="https://www.linkedin.com/in/anurag-dev" target='_blank'>
-                  <img src={linkendin} className='icon' />
+                <a href="https://www.linkedin.com/in/anurag-dev" target='_blank' aria-label='open linkedin profile' style={{width: "35px", height: "35px"}}>
+                  <img src={linkendin} className='icon' alt='linkedin profile' />
                 </a>
-                <a href='https://github.com/Anuragdev03' target='_blank'>
-                  <img src={github} className='icon' />
+                <a href='https://github.com/Anuragdev03' target='_blank' aria-label='open github profile'>
+                  <img src={github} className='icon' alt='github profile' />
                 </a>
               </section>
             </div>
