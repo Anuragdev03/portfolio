@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import linkendin from "./assets/linkedin.png";
 import github from "./assets/github.png";
+import Projects from './Projects';
 
-type Options = "1" | "2" | "3";
+type Options = "1" | "2" | "3" | "4";
 type Experience = 1 | 2
 
 function App() {
@@ -137,6 +138,11 @@ function App() {
                   <div className="line" style={{ width: option === "3" ? "50px" : "30px" }} />
                   <a href='#' onClick={() => handleOptions("3")} className='link' tabIndex={0}>EXPERIENCE</a>
                 </div>
+                <p />
+                <div className='link-container'>
+                  <div className="line" style={{ width: option === "4" ? "50px" : "30px" }} />
+                  <a href='#' onClick={() => handleOptions("4")} className='link' tabIndex={0}>Projects</a>
+                </div>
               </section>
 
               <section className='section-3'>
@@ -152,11 +158,13 @@ function App() {
               <section className='hide-on-desktop'>
                 <span onClick={() => handleOptions("1")} style={{fontWeight: option === "1" ? "bold" : "normal"}}>About </span>|
                 <span onClick={() => handleOptions("2")} style={{fontWeight: option === "2" ? "bold" : "normal"}}> Skills </span>|
-                <span onClick={() => handleOptions("3")} style={{fontWeight: option === "3" ? "bold" : "normal"}}>Experience</span>
+                <span onClick={() => handleOptions("3")} style={{fontWeight: option === "3" ? "bold" : "normal"}}>Experience</span>|
+                <span onClick={() => handleOptions("4")} style={{fontWeight: option === "4" ? "bold" : "normal"}}>Projects</span>
               </section>
               {option === "1" ? <About /> : null}
               {option === "2" ? <Skills /> : null}
               {option === "3" ? <Experience /> : null}
+              {option === "4" ? <Projects /> : null}
             </div>
           </div>
         </div>
