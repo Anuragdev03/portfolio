@@ -4,12 +4,18 @@ import "./Projects.css";
 const data = [
     {
         id: 1,
+        projectName: "Video Meeting App",
+        github: "https://github.com/Anuragdev03/group_video_call",
+        description: "Video calling app like google meet"
+    },
+    {
+        id: 2,
         projectName: "Simple Video App",
         github: "https://github.com/Anuragdev03/video_upload",
         description: "This application enables users to seamlessly upload, view, and stream videos from the server. With a simple and intuitive interface, users can easily manage their video content, which is stored on the server and accessible anytime."
     },
     {
-        id: 2,
+        id: 3,
         projectName: "MyVahan",
         github: "https://github.com/Anuragdev03/MyBike",
         description: "A simple android app to save service record of vehicle."
