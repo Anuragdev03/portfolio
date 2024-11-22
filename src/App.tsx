@@ -10,7 +10,7 @@ type Experience = 1 | 2
 function App() {
   const title = "<Software Engineer />"
   const [option, setOption] = useState<Options>("1")
-  const [selectedExp, setSelectedExp] = useState<Experience>(1)
+  const [selectedExp, setSelectedExp] = useState<Experience>(1);
 
   const About = () => {
     return (
