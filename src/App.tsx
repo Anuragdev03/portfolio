@@ -36,7 +36,7 @@ function App() {
         <p>HTML, CSS, JS, React, React Native</p>
 
         <h3 className='title'>Back-end:</h3>
-        <p>Node Js, Express, PostgreSQL, Sequelize ORM, Go, Python</p>
+        <p>Node Js, Express, Fastify, SQL, PostgreSQL, Sequelize ORM, Go, Python, Nginx, Caddy, AWS</p>
 
         <h3 className='title'>Testing library:</h3>
         <p>Jest, Enzyme, Cucumber, React testing library</p>
@@ -124,24 +124,25 @@ function App() {
               </section>
 
               <section className='section-2'>
+                
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "1" ? "50px" : "30px" }} />
-                  <a href='#' onClick={() => handleOptions("1")} className='link' tabIndex={0}>ABOUT</a>
+                  <a href='#' onClick={() => handleOptions("1")} className='link' tabIndex={0}>SKILLS</a>
                 </div>
                 <p />
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "2" ? "50px" : "30px" }} />
-                  <a href='#' onClick={() => handleOptions("2")} className='link' tabIndex={0}>SKILLS</a>
+                  <a href='#' onClick={() => handleOptions("2")} className='link' tabIndex={0}>EXPERIENCE</a>
                 </div>
                 <p />
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "3" ? "50px" : "30px" }} />
-                  <a href='#' onClick={() => handleOptions("3")} className='link' tabIndex={0}>EXPERIENCE</a>
+                  <a href='#' onClick={() => handleOptions("3")} className='link' tabIndex={0}>Projects</a>
                 </div>
                 <p />
                 <div className='link-container'>
                   <div className="line" style={{ width: option === "4" ? "50px" : "30px" }} />
-                  <a href='#' onClick={() => handleOptions("4")} className='link' tabIndex={0}>Projects</a>
+                  <a href='#' onClick={() => handleOptions("4")} className='link' tabIndex={0}>ABOUT</a>
                 </div>
               </section>
 
@@ -161,10 +162,10 @@ function App() {
                 <span onClick={() => handleOptions("3")} style={{fontWeight: option === "3" ? "bold" : "normal"}}>Experience</span>|
                 <span onClick={() => handleOptions("4")} style={{fontWeight: option === "4" ? "bold" : "normal"}}>Projects</span>
               </section>
-              {option === "1" ? <About /> : null}
-              {option === "2" ? <Skills /> : null}
-              {option === "3" ? <Experience /> : null}
-              {option === "4" ? <Projects /> : null}
+              {option === "1" ? <Skills /> : null}
+              {option === "2" ? <Experience /> : null}
+              {option === "3" ? <Projects /> : null}
+              {option === "4" ? <About /> : null}
             </div>
           </div>
         </div>
