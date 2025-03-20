@@ -157,10 +157,10 @@ function App() {
             </div>
             <div className='right-section'>
               <section className='hide-on-desktop'>
-                <span onClick={() => handleOptions("1")} style={{fontWeight: option === "1" ? "bold" : "normal"}}>About </span>|
-                <span onClick={() => handleOptions("2")} style={{fontWeight: option === "2" ? "bold" : "normal"}}> Skills </span>|
-                <span onClick={() => handleOptions("3")} style={{fontWeight: option === "3" ? "bold" : "normal"}}>Experience</span>|
-                <span onClick={() => handleOptions("4")} style={{fontWeight: option === "4" ? "bold" : "normal"}}>Projects</span>
+                <span onClick={() => handleOptions("1")} style={{fontWeight: option === "1" ? "bold" : "normal"}}> Skills </span>|
+                <span onClick={() => handleOptions("2")} style={{fontWeight: option === "2" ? "bold" : "normal"}}>Experience</span>|
+                <span onClick={() => handleOptions("3")} style={{fontWeight: option === "3" ? "bold" : "normal"}}>Projects</span>|
+                <span onClick={() => handleOptions("4")} style={{fontWeight: option === "4" ? "bold" : "normal"}}>About </span>
               </section>
               {option === "1" ? <Skills /> : null}
               {option === "2" ? <Experience /> : null}
