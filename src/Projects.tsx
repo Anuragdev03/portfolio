@@ -4,22 +4,32 @@ import "./Projects.css";
 const data = [
     {
         id: 1,
+        projectName: "xpertserv.com",
+        github: "https://xpertserv.com",
+        description: `ExpertService is a SaaS platform that connects users with experts based on location, 
+        including country, state, city, and distance. Users can search for experts and request appointments 
+        seamlessly. Experts can sign up, manage customer requests, and utilize task and event management 
+        features to streamline their workflow. The platform ensures easy discovery and efficient interaction 
+        between users and experts.`
+    },
+    {
+        id: 2,
         projectName: "Video Meeting App",
         github: "https://github.com/Anuragdev03/group_video_call",
         description: "Video calling app like google meet"
     },
     {
-        id: 2,
+        id: 3,
         projectName: "Simple Video App",
         github: "https://github.com/Anuragdev03/video_upload",
         description: "This application enables users to seamlessly upload, view, and stream videos from the server. With a simple and intuitive interface, users can easily manage their video content, which is stored on the server and accessible anytime."
     },
     {
-        id: 3,
+        id: 4,
         projectName: "MyVahan",
         github: "https://github.com/Anuragdev03/MyBike",
         description: "A simple android app to save service record of vehicle."
-    }
+    },
 ]
 
 interface Project {
@@ -39,7 +49,7 @@ export default function Projects() {
 
     function setData() {
         let obj = data.find(obj => obj.id === id);
-        if(obj) setSelectedData(obj)
+        if (obj) setSelectedData(obj)
     }
 
     function handleProject(id: number) {
@@ -64,7 +74,7 @@ export default function Projects() {
                 <div>
                     <span className="title">{selectedData?.projectName}</span>
                     <p />
-                    <a target="_blank" href={selectedData?.github} style={{textDecoration: "underline"}}>Github</a>
+                    <a target="_blank" href={selectedData?.github} style={{ textDecoration: "underline" }}>Github/Link</a>
                     <p>{selectedData?.description}</p>
                 </div>
             </div>
