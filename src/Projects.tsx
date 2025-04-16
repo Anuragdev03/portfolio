@@ -14,18 +14,24 @@ const data = [
     },
     {
         id: 2,
+        projectName: "Keep It - Password Manager and Authenticator",
+        github: "https://keepit123.netlify.app/",
+        description: "Secure, offline-first password manager and authenticator. Keep sensitive data private, right on your device."
+    },
+    {
+        id: 3,
         projectName: "Video Meeting App",
         github: "https://github.com/Anuragdev03/group_video_call",
         description: "Video calling app like google meet"
     },
     {
-        id: 3,
+        id: 4,
         projectName: "Simple Video App",
         github: "https://github.com/Anuragdev03/video_upload",
         description: "This application enables users to seamlessly upload, view, and stream videos from the server. With a simple and intuitive interface, users can easily manage their video content, which is stored on the server and accessible anytime."
     },
     {
-        id: 4,
+        id: 5,
         projectName: "MyVahan",
         github: "https://github.com/Anuragdev03/MyBike",
         description: "A simple android app to save service record of vehicle."
