@@ -66,7 +66,7 @@ export default function Projects() {
             <div className="project-grid">
                 <div>
                     {data.map(obj => (
-                        <>
+                        <div>
                             <span
                                 onClick={() => handleProject(obj.id)}
                                 className='project-name'
@@ -74,10 +74,10 @@ export default function Projects() {
                             >
                                 {obj.projectName}</span>
                             <p />
-                        </>
+                        </div>
                     ))}
                 </div>
-                <div>
+                <div className="project-card">
                     <span className="title">{selectedData?.projectName}</span>
                     <p />
                     <a target="_blank" href={selectedData?.github} style={{ textDecoration: "underline" }}>Github/Link</a>
